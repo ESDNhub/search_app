@@ -29,7 +29,8 @@ class CatalogController < ApplicationController
     #  # :rows => 1
     #  # :q => '{!raw f=id v=$id}'
     #}
-
+    
+    config.document_presenter_class = Dbla::CleanTitlePresenter
     config.repository_class = Dbla::Repository
     config.document_model = Item
     config.response_model = Dbla::Response
@@ -37,7 +38,7 @@ class CatalogController < ApplicationController
     config.search_builder_class = SearchBuilder
     config.show.partials.append :item_thumbnail
 
-# solr field configuration for search results/index views
+    # solr field configuration for search results/index views
     config.index.title_field = 'sourceResource.title'
     config.index.thumbnail_field = 'object'
     config.index.display_type_field = 'ingestType'
@@ -48,6 +49,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'url_fulltext_display', :label => 'URL'
     config.add_show_field 'sourceResource.date', :label => 'Date', :helper_method => 'show_item_begin_date'
     config.add_show_field 'sourceResource.collection.title', :label => 'Collection'
+    config.add_show_field 'sourceResource.relation', :label => 'Collection Name'
     config.add_show_field 'sourceResource.description', :label => 'Description'
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
@@ -75,8 +77,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'dataProvider', label: 'Contributing Institution'
     config.add_facet_field 'sourceResource.language.name', label: 'By Language'
     config.add_facet_field 'sourceResource.subject.name', label: 'By Subject'
-    config.add_facet_field 'sourceResource.collection.title', label: 'Collection', display: false
-
+    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection'
+    
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
@@ -162,7 +164,7 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
-  end
+    end
 
 
 end

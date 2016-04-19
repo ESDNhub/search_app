@@ -44,6 +44,9 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem 'xray-rails'
+end
 
 gem 'blacklight', '>= 5.3.0'
 gem 'jettywrapper', '>= 2.0'

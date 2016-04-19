@@ -1,120 +1,127 @@
-0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
-37   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /Users/johnmignault/Documents/workspace/search_app/jetty/contexts at interval 0
-72   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /Users/johnmignault/Documents/workspace/search_app/jetty/contexts/solr.xml
-1376 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-1443 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
-1464 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
-1464 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /Users/johnmignault/Documents/workspace/search_app/jetty/solr
-1466 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/johnmignault/Documents/workspace/search_app/jetty/solr/'
-1469 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/' to classloader
-1470 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
-1470 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
-1471 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
-1694 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /Users/johnmignault/Documents/workspace/search_app/jetty/solr/solr.xml
-1891 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /Users/johnmignault/Documents/workspace/search_app/jetty/solr
-1901 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1652807864
-1902 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/]
-1904 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib
-1905 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/' to classloader
-1905 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
-1905 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
-1906 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
-1928 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
-1928 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
-1932 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
-1933 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
-1933 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
-1933 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
-1933 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
-1934 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
-1934 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
-2097 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
-2099 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-2101 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-2102 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
-2162 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /Users/johnmignault/Documents/workspace/search_app/jetty/solr
-2172 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/
-2177 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
-2179 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/'
-2239 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
-2240 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
-2240 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
-2241 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
-2241 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
-2242 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.3.jar' to classloader
-2242 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.3.jar' to classloader
-2242 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.3.jar' to classloader
-2242 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/johnmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.3.jar' to classloader
-2300 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
-2423 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
-2434 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf/schema.xml
-2538 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
-2754 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
-2758 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
-2763 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
-2768 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
-2771 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
-3016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
-3018 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
-3021 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
-3180 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/
-3198 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
-3212 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/, dataDir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/
-3212 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
-3225 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data
-3249 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index/
-3250 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index
-3382 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
-3451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
-3451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
-3451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
-3451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
-3452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
-3452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
-3455 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
-3455 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-3455 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
-3456 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
-3457 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
-3457 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
-3459 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
-3461 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/luke: org.apache.solr.handler.admin.LukeRequestHandler
-3464 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
-3465 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
-3465 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
-3485 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3489 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3490 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3500 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
-3500 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
-3571 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
-3572 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
-3612 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@2af58259[blacklight-core] main
-3619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
-3619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf}
-3626 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
-3638 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/johnmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
-3638 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
-3638 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
-3639 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-3659 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
-3665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
-3674 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
-3680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
-3681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-3692 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
-3692 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@2af58259[blacklight-core] main{StandardDirectoryReader(segments_2:3:nrt _0(4.10.3):C30)}
-3694 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/Users/johnmignault/Documents/workspace/search_app/jetty
-3694 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
-3726 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
-21487 [qtp731395981-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1434560864047} status=0 QTime=7 
-21868 [qtp731395981-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1434560864400} status=0 QTime=35 
-24338 [qtp731395981-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/logging params={wt=json&since=0&_=1434560866899} status=0 QTime=3 
-30032 [qtp731395981-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/logging params={wt=json&_=1434560872595} status=0 QTime=3 
-32137 [qtp731395981-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1434560874683} status=0 QTime=18 
-32255 [qtp731395981-15] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1434560874788} status=0 QTime=1 
-35065 [qtp731395981-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/properties params={wt=json&_=1434560877631} status=0 QTime=0 
-36247 [qtp731395981-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/threads params={wt=json&_=1434560878746} status=0 QTime=57 
+1    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+24   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /Users/jmignault/Documents/workspace/search_app/jetty/contexts at interval 0
+29   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /Users/jmignault/Documents/workspace/search_app/jetty/contexts/solr.xml
+910  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+954  [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+967  [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+967  [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /Users/jmignault/Documents/workspace/search_app/jetty/solr
+968  [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/jmignault/Documents/workspace/search_app/jetty/solr/'
+969  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/' to classloader
+971  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
+972  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
+972  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
+1072 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /Users/jmignault/Documents/workspace/search_app/jetty/solr/solr.xml
+1165 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /Users/jmignault/Documents/workspace/search_app/jetty/solr
+1170 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 586127428
+1170 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/]
+1172 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /Users/jmignault/Documents/workspace/search_app/jetty/solr/lib
+1172 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/' to classloader
+1172 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
+1172 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
+1172 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
+1186 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1186 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1190 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1191 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+1306 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+1309 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1310 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1311 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+1364 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /Users/jmignault/Documents/workspace/search_app/jetty/solr
+1373 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/
+1378 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1380 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/'
+1406 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+1407 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
+1407 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+1407 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+1407 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+1408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.3.jar' to classloader
+1408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.3.jar' to classloader
+1408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.3.jar' to classloader
+1408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/jmignault/Documents/workspace/search_app/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.3.jar' to classloader
+1443 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
+1488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+1492 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf/schema.xml
+1516 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
+1568 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+1570 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+1572 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+1573 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+1575 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+1640 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+1640 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+1641 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+1702 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/
+1715 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+1719 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/, dataDir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/
+1719 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+1727 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data
+1733 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index/
+1733 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index
+1830 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+1836 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+1837 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+1837 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+1837 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+1837 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+1838 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+1840 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+1840 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+1840 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+1840 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+1840 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+1841 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+1842 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+1844 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/luke: org.apache.solr.handler.admin.LukeRequestHandler
+1845 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+1845 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+1846 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+1856 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1858 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1858 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1859 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1859 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1865 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+1865 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+1899 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
+1899 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
+1921 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@70f44ccf[blacklight-core] main
+1926 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
+1926 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf}
+1933 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
+1938 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/conf
+1938 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+1938 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+1939 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+1949 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+1954 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+1958 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+1962 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+1962 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+1970 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+1970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@70f44ccf[blacklight-core] main{StandardDirectoryReader(segments_2:3:nrt _0(4.10.3):C30)}
+1971 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/Users/jmignault/Documents/workspace/search_app/jetty
+1971 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+1991 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+2542 [Thread-0] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown SocketConnector@0.0.0.0:8983
+2542 [Thread-0] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/Users/jmignault/Documents/workspace/search_app/jetty/solr-webapp/webapp/},/Users/jmignault/Documents/workspace/search_app/jetty/webapps/solr.war
+3544 [Thread-0] INFO  org.apache.solr.core.CoreContainer  – Shutting down CoreContainer instance=586127428
+3545 [Thread-0] INFO  org.apache.solr.core.SolrCore  – [blacklight-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@63587d2c
+3545 [Thread-0] INFO  org.apache.solr.update.UpdateHandler  – closing DirectUpdateHandler2{commits=0,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+3545 [Thread-0] INFO  org.apache.solr.update.SolrCoreState  – Closing SolrCoreState
+3546 [Thread-0] INFO  org.apache.solr.update.DefaultSolrCoreState  – SolrCoreState ref count has reached 0 - closing IndexWriter
+3546 [Thread-0] INFO  org.apache.solr.update.DefaultSolrCoreState  – closing IndexWriter with IndexWriterCloser
+3550 [Thread-0] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Closing main searcher on request.
+3551 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing StandardDirectoryFactory - 2 directories currently being tracked
+3551 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index [CachedDir<<refCount=0;path=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index;done=false>>]
+3551 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data/index
+3551 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data [CachedDir<<refCount=0;path=/Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data;done=false>>]
+3552 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /Users/jmignault/Documents/workspace/search_app/jetty/solr/blacklight-core/data
+3553 [Thread-0] INFO  org.eclipse.jetty.server.handler.ContextHandler  – stopped o.e.j.w.WebAppContext{/solr,file:/Users/jmignault/Documents/workspace/search_app/jetty/solr-webapp/webapp/},/Users/jmignault/Documents/workspace/search_app/jetty/webapps/solr.war
