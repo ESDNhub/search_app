@@ -30,7 +30,6 @@ class CatalogController < ApplicationController
     #  # :q => '{!raw f=id v=$id}'
     #}
     
-    config.document_presenter_class = Dbla::CleanTitlePresenter
     config.repository_class = Dbla::Repository
     config.document_model = Item
     config.response_model = Dbla::Response
