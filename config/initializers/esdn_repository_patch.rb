@@ -10,8 +10,9 @@ module Dbla
         q = "?api_key=#{api_key}&q=#{params['q']}"
         fq = []
         blacklight_config.facet_fields.each do |f|
+          # byebug
           # [fiendName, facetConfig]
-          next unless f[0] =~ /^(sourceResource|provider|object|intermediateProvider|dataProvider)/
+          next unless f[0] =~ /^(sourceResource|provider|object|intermediateProvider|dataProvider|relation)/
           fqv = f[0]
           fqv = fqv + ':' + f[1].pin if f[1].pin
           fq << fqv

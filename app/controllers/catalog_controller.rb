@@ -6,7 +6,7 @@ class CatalogController < ApplicationController
 
   helper CollectionsHelper
 
-    configure_blacklight do |config|
+  configure_blacklight do |config|
     ## Default parameters to send to solr for all search-like requests. See also SearchBuilder#processed_parameters
     config.default_solr_params = {
       :qt => 'search',
@@ -53,6 +53,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
+    config.add_show_field 'intermediateProvider', :label => 'Council'
 
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
@@ -74,9 +75,11 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
     config.add_facet_field 'dataProvider', label: 'Contributing Institution'
+    config.add_facet_field 'intermediateProvider', label: 'Council'
     config.add_facet_field 'sourceResource.language.name', label: 'By Language'
     config.add_facet_field 'sourceResource.subject.name', label: 'By Subject'
-    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection'
+    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection', limit: 10
+
     
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -163,7 +166,7 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
-    end
+  end
 
 
 end

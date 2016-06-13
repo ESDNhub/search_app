@@ -46,6 +46,8 @@ end
 
 group :development do
   gem 'xray-rails'
+  gem 'guard'
+  gem 'guard-rails', require: false
 end
 
 gem 'blacklight', '>= 5.3.0'
