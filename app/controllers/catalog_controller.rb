@@ -53,6 +53,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
+    config.add_show_field '@id', :label => 'DPLA', :helper_method => 'dbla_external_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
 
     # solr fields that will be treated as facets by the blacklight application
@@ -75,10 +76,10 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
     config.add_facet_field 'dataProvider', label: 'Contributing Institution'
-    config.add_facet_field 'intermediateProvider', label: 'Council'
     config.add_facet_field 'sourceResource.language.name', label: 'By Language'
     config.add_facet_field 'sourceResource.subject.name', label: 'By Subject'
-    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection', limit: 10
+    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection'
+    config.add_facet_field 'intermediateProvider', label: 'By Council'
 
     
     # Have BL send all facet field names to Solr, which has been the default
@@ -162,6 +163,7 @@ class CatalogController < ApplicationController
     config.add_sort_field 'pub_date_sort desc, title_sort asc', :label => 'year'
     config.add_sort_field 'author_sort asc, title_sort asc', :label => 'author'
     config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'title'
+    config.add_sort_field 'dataProvider asc, pub_date_sort desc', :label => 'collection'
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
