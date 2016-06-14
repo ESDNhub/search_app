@@ -28,8 +28,7 @@ module Dbla
           value = "\"#{value}\"" if value.index(' ')
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
-        q << "&provider=Empire%20State%20Digital%20Network"
-        # q << "ORNew%20York%20Public%20Library"
+        q << '&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"'
         puts url + q
         data = get(url + q)
       end

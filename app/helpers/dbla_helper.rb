@@ -21,7 +21,7 @@ module DblaHelper
 
   def build_dpla_link fld
     dpla_link = 'http://dp.la/item/' + @document['id']
-    link_to dpla_link, dpla_link
+    link_to dpla_link, dpla_link, :target => '_blank'
   end
 
   def build_dpla_api_link fld
