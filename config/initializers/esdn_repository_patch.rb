@@ -29,7 +29,7 @@ module Dbla
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
         q << "&provider=Empire%20State%20Digital%20Network"
-        q << "&provider=New%20York%20Public%20Library"
+        # q << "&provider=New%20York%20Public%20Library"
         puts url + q
         data = get(url + q)
       end
