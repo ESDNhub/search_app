@@ -6,7 +6,6 @@ tmp/*
 .ruby-version
 TAGS
 *.log
-
 *.log
 *.sqlite3
 *.log
