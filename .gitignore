@@ -8,3 +8,6 @@ TAGS
 *.log
 
 *.log
+*.sqlite3
+*.log
+*.pid
