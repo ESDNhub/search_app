@@ -54,6 +54,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
     config.add_show_field 'id', :label => 'DPLA', :helper_method => 'build_dpla_link'
+    config.add_show_field '@id', :label => 'DPLA API', :helper_method => 'build_dpla_api_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
 
     # solr fields that will be treated as facets by the blacklight application
