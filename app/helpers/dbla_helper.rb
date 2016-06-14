@@ -19,8 +19,9 @@ module DblaHelper
     end
   end
 
-  def show_item_date fld
-    
+  def build_dpla_link fld
+    dpla_link = 'http://dp.la/item/' + @document['id']
+    link_to dpla_link, dpla_link
   end
 
   def render_item_thumbnail_tag doc
