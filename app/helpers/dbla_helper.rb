@@ -6,8 +6,7 @@ module DblaHelper
     fld = @document['sourceResource']['title'][0]
   end
 
-  def show_item_begin_date fld
-    # TODO: check for date field before manipulating
+  def show_item_date fld
     if !@document['sourceResource']['date'][0]['begin'].nil?
       first_date = @document['sourceResource']['date'][0]['begin'][0..3]
       second_date = @document['sourceResource']['date'][0]['end'][0..3]
@@ -15,6 +14,10 @@ module DblaHelper
         fld = first_date
       else
         fld = first_date + " - " + second_date
+      end
+    else
+      fld = @document['sourceResource']['date']['displayDate']
+      unless @document['sourceResource']['date']['displayDate'].nil?
       end
     end
   end
@@ -25,7 +28,6 @@ module DblaHelper
   end
 
   def build_dpla_api_link fld
-    
     dpla_link = @document['@id'] + '?api_key=1c8a8b6674ef9508a55732256946895f'
     link_to @document['@id'], dpla_link, :target => '_blank'
   end
