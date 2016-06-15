@@ -29,8 +29,9 @@ module Dbla
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
         q << '&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"'
-        puts url + q
-        data = get(url + q)
+        uri = URI.encode(url + q)
+        parsed_uri = URI.parse(uri)
+        data = get(parsed_uri)
       end
       Response.new(data, params,{})
     end
