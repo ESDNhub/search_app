@@ -46,7 +46,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.creator', :label => 'Author'
     config.add_show_field 'sourceResource.format', :label => 'Format'
     config.add_show_field 'url_fulltext_display', :label => 'URL'
-    config.add_show_field 'sourceResource.date.displayDate', :label => 'Date', :helper_method => 'show_item_date'
+    config.add_show_field 'sourceResource.date.displayDate', :label => 'Date'
     config.add_show_field 'sourceResource.collection.title', :label => 'Collection'
     config.add_show_field 'sourceResource.relation', :label => 'Collection Name'
     config.add_show_field 'sourceResource.description', :label => 'Description'
