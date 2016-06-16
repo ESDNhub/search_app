@@ -2,8 +2,7 @@ module DblaHelper
   include Dbla::ApplicationHelperBehavior
 
   def show_item_clean_title fld
-    puts @document['sourceResource']['title']
-    fld = @document['sourceResource']['title'][0]
+    fld.class == Array ? fld[0] : fld
   end
 
   def build_dpla_link fld
