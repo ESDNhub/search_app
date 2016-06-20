@@ -77,10 +77,10 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
     config.add_facet_field 'dataProvider', label: 'Contributing Institution'
-    config.add_facet_field 'sourceResource.language.name', label: 'By Language'
-    config.add_facet_field 'sourceResource.subject.name', label: 'By Subject'
-    config.add_facet_field 'sourceResource.collection.title', label: 'By Collection'
-    config.add_facet_field 'intermediateProvider', label: 'By Council'
+    config.add_facet_field 'sourceResource.language.name', label: 'Language'
+    config.add_facet_field 'sourceResource.subject.name', label: 'Subject'
+    config.add_facet_field 'sourceResource.collection.title', label: 'Collection'
+    config.add_facet_field 'intermediateProvider', label: 'Council'
 
     
     # Have BL send all facet field names to Solr, which has been the default
