@@ -36,6 +36,8 @@ class CatalogController < ApplicationController
     config.document_presenter_class = Dbla::DocumentPresenter
     config.search_builder_class = SearchBuilder
     config.show.partials.append :item_thumbnail
+    config.index.thumbnail_method = :render_thumbnail
+    config.show.thumbnail_method = :render_thumbnail
 
     # solr field configuration for search results/index views
     config.index.title_field = 'sourceResource.title'
