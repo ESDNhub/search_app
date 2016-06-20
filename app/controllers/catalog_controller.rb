@@ -49,7 +49,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'url_fulltext_display', :label => 'URL'
     config.add_show_field 'sourceResource.date.displayDate', :label => 'Date'
     config.add_show_field 'sourceResource.collection.title', :label => 'Collection'
-    config.add_show_field 'sourceResource.relation', :label => 'Collection Name'
     config.add_show_field 'sourceResource.description', :label => 'Description'
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
