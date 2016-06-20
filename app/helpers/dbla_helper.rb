@@ -16,6 +16,12 @@ module DblaHelper
   end
 
   def render_item_thumbnail_tag doc
-    link_to image_tag(doc[:object]), doc[:isShownAt], :target => "_blank"
+    if doc[:object].start_with? 'http://'
+      img_path = doc[:object]
+    else
+      img_path = 'not_found.png'
+    end
+    link_to image_tag(img_path), doc[:isShownAt], :target => "_blank"
   end
+
 end
