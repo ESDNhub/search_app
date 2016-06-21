@@ -53,6 +53,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
+    config.add_show_field 'provider.name', :label => 'Provider'
     config.add_show_field 'id', :label => 'DPLA', :helper_method => 'build_dpla_link'
     config.add_show_field '@id', :label => 'DPLA API', :helper_method => 'build_dpla_api_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
@@ -80,6 +81,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'sourceResource.language.name', label: 'Language'
     config.add_facet_field 'sourceResource.subject.name', label: 'Subject'
     config.add_facet_field 'sourceResource.collection.title', label: 'Collection'
+    config.add_facet_field 'provider.name', label: 'Provider'
     config.add_facet_field 'intermediateProvider', label: 'Council'
 
     
