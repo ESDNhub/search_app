@@ -14,7 +14,7 @@ module Dbla
       #TODO Move this into a SearchBuilder, add a generator
       #TODO handle searches with blank 'q' param
       if params['q']
-        q = "?api_key=#{api_key}&q=#{params['q']}"
+        q = "?api_key=#{api_key}&q=#{CGI::escape(params['q'])}"
         fq = []
         blacklight_config.facet_fields.each do |f|
           # [fiendName, facetConfig]
@@ -36,17 +36,12 @@ module Dbla
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
         # byebug
-        url_suffix = URI.encode('&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"')
-        # url_suffix = '&provider="Empire+State+Digital+Network"'
-        # q.match(/(provider.name|collection.name)=/) { |m| url_suffix = '' }
+        url_suffix =  URI.encode('&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"')
         q << url_suffix
-        # uri = URI.encode(url + q)
         puts "search_url: " + url + q
-        #        parsed_uri = URI.parse(uri)
         data = get(url + q)
       end
-      rsp = Response.new(data, params,{})
-      return rsp
+      Response.new(data, params,{})
     end
 
     def get(uri)
