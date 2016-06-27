@@ -23,7 +23,7 @@ module Dbla
           fqv = fqv + ':' + f[1].pin if f[1].pin
           fq << fqv
         end
-        # byebug
+        #byebug
         q << "&facets=#{fq.join(',')}" unless fq.empty?
         if params.page
           q << "&page=#{params.page}"
@@ -40,14 +40,23 @@ module Dbla
         # url_suffix = '&provider="Empire+State+Digital+Network"'
         # q.match(/(provider.name|collection.name)=/) { |m| url_suffix = '' }
         q << url_suffix
-        uri = URI.encode(url + q)
+        # uri = URI.encode(url + q)
         puts "search_url: " + url + q
-        parsed_uri = URI.parse(uri)
-        data = get(parsed_uri)
+        #        parsed_uri = URI.parse(uri)
+        data = get(url + q)
       end
-      Response.new(data, params,{})
+      rsp = Response.new(data, params,{})
+      return rsp
+    end
+
+    def get(uri)
+      uri = URI(uri)
+      #byebug
+      Net::HTTP.start(uri.host, uri.port) do |http|
+        request = Net::HTTP::Get.new uri
+        response = http.request request
+        return JSON.parse(response.body)
+      end
     end
   end
-
-
 end
