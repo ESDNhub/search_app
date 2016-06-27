@@ -12,6 +12,7 @@ module Dbla
     def search params = {}
       data = nil
       #TODO Move this into a SearchBuilder, add a generator
+      #TODO handle searches with blank 'q' param
       if params['q']
         q = "?api_key=#{api_key}&q=#{params['q']}"
         fq = []
@@ -35,8 +36,8 @@ module Dbla
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
         # byebug
-        # url_suffix = '&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"'
-        url_suffix = '&provider="Empire+State+Digital+Network"'
+        url_suffix = '&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"'
+        # url_suffix = '&provider="Empire+State+Digital+Network"'
         # q.match(/(provider.name|collection.name)=/) { |m| url_suffix = '' }
         q << url_suffix
         uri = URI.encode(url + q)
