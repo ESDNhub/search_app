@@ -1,6 +1,6 @@
 module ApplicationHelper
   def render_thumbnail(document, options)
-    if !document[:object].nil?
+    if not document[:object].nil?
       if document[:object].start_with? 'http://'
         img_path = document[:object]
       else
