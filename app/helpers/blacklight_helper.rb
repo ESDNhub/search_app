@@ -2,6 +2,6 @@ module BlacklightHelper
   include Blacklight::BlacklightHelperBehavior
 
   def application_name
-    "MediumESDN"
+    "Empire State Digital Network, Bitches"
   end
 end
