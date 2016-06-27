@@ -95,6 +95,8 @@ class CatalogController < ApplicationController
     config.add_index_field 'sourceResource.format', :label => 'Format'
     config.add_index_field 'sourceResource.creator', :label => 'Creator'
     config.add_index_field 'sourceResource.collection.title', label: 'In Collection', :helper_method => 'dbla_collection_search_link'
+    config.add_index_field 'dataProvider', label: 'Contributing Institution'
+    config.add_index_field 'provider.name', :label => 'Provider'
     config.add_index_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
