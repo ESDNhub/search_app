@@ -36,7 +36,7 @@ module Dbla
           q << "&#{facet_field}=#{CGI::escape(value)}"
         end
         # byebug
-        url_suffix = '&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"'
+        url_suffix = URI.encode('&provider="Empire+State+Digital+Network"+OR+"New+York+Public+Library"')
         # url_suffix = '&provider="Empire+State+Digital+Network"'
         # q.match(/(provider.name|collection.name)=/) { |m| url_suffix = '' }
         q << url_suffix
