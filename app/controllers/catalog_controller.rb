@@ -58,6 +58,7 @@ class CatalogController < ApplicationController
     config.add_show_field '@id', :label => 'DPLA API', :helper_method => 'build_dpla_api_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
 
+    # take out broken document actions. Leave bookmarking
     config.show.document_actions.delete(:sms)
     config.show.document_actions.delete(:email)
     config.show.document_actions.delete(:citation)
