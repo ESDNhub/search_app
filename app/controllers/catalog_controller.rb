@@ -58,6 +58,10 @@ class CatalogController < ApplicationController
     config.add_show_field '@id', :label => 'DPLA API', :helper_method => 'build_dpla_api_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
 
+    config.show.document_actions.delete(:sms)
+    config.show.document_actions.delete(:email)
+    config.show.document_actions.delete(:citation)
+
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
     #
