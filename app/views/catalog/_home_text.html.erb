@@ -1,37 +1,8 @@
 <div class="page-header row">
-    <h1 class="col-md-8 page-heading">Welcome to <%= application_name %>!</h1>
-  
-    <ul class="nav nav-pills col-md-4">
-	<li><a href="https://github.com/projectblacklight/blacklight/">Github</a></li>
-	<li><a href="https://github.com/projectblacklight/blacklight/wiki">Wiki</a></li>
-	<li><a href="https://github.com/projectblacklight/blacklight/releases/tag/v<%= Blacklight::VERSION %>">Release Notes</a></li>
-    </ul>
-
-
+    <h1 class="col-md-8 page-heading">Welcome to the <%= application_name %> Portal!</h1>
 </div>
 
 <div id="getting-started">
-    <h2 class='section-heading'>Why don't you search for <a href="/?utf8=✓&search_field=all_fields&q=something" >something?</a></h2>
+    <h2 class='section-heading'>Local history, global access</h2>
 </div>
 
-<%# This is the same panel shown in the Rails welcome template %>
-<div id="about">
-    <h3 class='section-heading'><a href="/rails/info/properties">About your application&rsquo;s environment</a></h3>
-    <div id="about-content" class="well" style="display: none"></div>
-</div>
-
-<script>
- $(function() {
-     $('#about a').on('click', function(e) {
-	 e.preventDefault();
-
-	 if ($('#about-content').html() == "") {
-             $('#about-content').load($(this).attr("href"), function() {
-		 $('#about-content').show();
-             });
-	 } else {
-             $('#about-content').toggle();
-	 }
-     });
- });
-</script>
