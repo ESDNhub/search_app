@@ -59,6 +59,7 @@ gem 'devise-guests', '~> 0.3'
 gem 'blacklight-marc', '~> 5.0'
 gem 'dbla'
 gem 'addressable'
+gem 'bootswatch-rails'
 
 group :production do
   gem 'pg',             '0.17.1'

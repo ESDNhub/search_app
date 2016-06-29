@@ -1,6 +1,17 @@
 // application.scss
-@import 'bootstrap-vars';
-@import 'blacklight';
+@import "bootswatch/cosmo/variables";
+
+@import "bootstrap";
+
+@import "bootswatch/cosmo/bootswatch";
+
+@import 'blacklight/blacklight';
+
+#header-navbar {
+    background-color: #000408;
+    border-color: #000408;
+}
+
 #header-navbar .navbar-brand {
     background: none;
     width: 300px;
