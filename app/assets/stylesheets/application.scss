@@ -4,6 +4,10 @@
 
 @import 'blacklight/blacklight';
 
+@import "agency/agency";
+
+@import "font-awesome/css/font-awesome";
+
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 #header-navbar {
@@ -17,3 +21,8 @@
     font-size: x-large;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 700;
+}
