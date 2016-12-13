@@ -26,3 +26,15 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     font-weight: 700;
 }
+
+header .intro-text .intro-heading {
+    color: black;
+}
+
+header .intro-text .intro-lead-in {
+    color: black;
+}
+
+header {
+    background-image: image_url('header-bg.jpg');
+}
