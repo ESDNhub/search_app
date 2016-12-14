@@ -1,8 +1,18 @@
 <header>
     <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading"><%= application_name %></div>
-            <div class="intro-lead-in">Local history, global access</div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <h1>Search Our Local History</h1>
+                </div>
+                <container id="searchform">
+                    
+                    <input id="searchterm" type="text" /> <br />
+                    <a href="{{ site.baseurl }}#searchresults">
+                        <button id="search" class="btn btn-xl">search</button>
+                    </a>
+            </div>
         </div>
-    </div>
+    </div>  
+    <p>Ausable lake, May 1920. Image source <a href="http://digitalcollections.archives.nysed.gov/index.php/Detail/Object/Show/object_id/513">New York State Archives</a></p>
 </header>
