@@ -19,15 +19,21 @@
 @import 'blacklight/blacklight';
 
 #header-navbar .navbar-brand {
-    background: image_url("ESLN_logo.png");
-    width: 500px;
+    background: none;
+    width: 30%;
     font-size: x-large;
     background-repeat: no-repeat;
     background-color: #ffffff;
+    text-decoration-color: black;
 }
 
 #header-navbar {
     background-color: #ffffff;
+    color: black;
+}
+
+.navbar-inverse .navbar-brand {
+    color: black;
 }
 
 .navbar-inverse .navbar-nav> li > a {
