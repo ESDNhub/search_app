@@ -1,40 +1,68 @@
 // application.scss
 
+@import "bootstrap-sprockets";
+
+// Import flatly variables
+@import "bootswatch/flatly/variables";
+
 @import "bootstrap";
 
-@import 'blacklight/blacklight';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-@import "agency/agency";
+// And finally bootswatch style itself
+@import "bootswatch/flatly/bootswatch";
 
-@import "font-awesome/css/font-awesome";
 
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
-#header-navbar {
-    background-color: #000408;
-    border-color: #000408;
-}
+@import 'blacklight/blacklight';
 
 #header-navbar .navbar-brand {
-    background: none;
+    background: image_url("ESLN_logo.png");
     width: 500px;
     font-size: x-large;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: none;
-    font-weight: 700;
+#header-navbar {
+    background-color: #ffffff;
 }
 
-header .intro-text .intro-heading {
+.navbar-inverse .navbar-nav> li > a {
     color: black;
 }
 
-header .intro-text .intro-lead-in {
-    color: black;
+#splash {
+    height: 100%;
+    width: 100%;
 }
 
-header {
+#splash {
     background-image: image_url('header-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.intro-text {
+    padding-top:200px;
+}
+
+.intro-text > h1 {
+    text-align: center;
+}
+
+.intro-text > form {
+    padding-left: 275px;
+}
+
+#cite {
+    text-align: center;
+}
+
+#search {
+    vertical-align: middle;
+    margin: auto;
 }
