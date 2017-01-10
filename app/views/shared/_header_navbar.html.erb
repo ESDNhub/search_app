@@ -8,7 +8,7 @@
       <span class="icon-bar"></span>
     </button>
     </div>
-    <%= link_to application_name, root_path, class: "navbar navbar-brand" %>
+    <%= link_to '', root_path, class: "navbar navbar-brand" %>
 
     <div class="collapse navbar-collapse" id="user-util-collapse">
 	<%= render :partial=>'/user_util_links' %>
@@ -16,7 +16,15 @@
   </div>
 </div>
 
-<% if has_search_parameters? %>
+<% if current_page?(root_url) %>
+    <% if has_search_parameters? %>
+        <div id="search-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <%= render_search_bar  %>
+            </div>
+        </div>
+    <% end %>
+<% else %>
     <div id="search-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <%= render_search_bar  %>
