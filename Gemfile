@@ -60,6 +60,7 @@ gem 'blacklight-marc', '~> 5.0'
 gem 'dbla'
 gem 'addressable'
 gem 'bootswatch-rails'
+gem 'font-awesome-sass', '~> 4.7.0'
 
 group :production do
   gem 'pg',             '0.17.1'
