@@ -63,6 +63,6 @@ gem 'font-awesome-sass', '~> 4.7.0'
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '2.11.1'
+  gem 'puma',           '~> 3.0'
   gem 'sqlite3'
 end
