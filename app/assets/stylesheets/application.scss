@@ -33,6 +33,10 @@
     width: 100%;
 }
 
+#header-navbar > div.container {
+    width: 95%;
+}
+
 .navbar-inverse .navbar-brand {
     color: black;
 }
@@ -57,8 +61,13 @@
     height: 800px;
 }
 
+.row {
+    margin:auto;
+}
+
 .intro-text {
     padding-top:200px;
+    width: 100%;
 }
 
 .intro-text > h1 {
@@ -66,7 +75,11 @@
 }
 
 .intro-text > form {
-    padding-left: 275px;
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
 #cite {
