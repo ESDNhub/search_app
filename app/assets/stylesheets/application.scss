@@ -51,7 +51,7 @@
 }
 
 #main-container {
-    width: 100%
+    width: 100%;
 }
 
 #splash {
@@ -74,12 +74,16 @@
     text-align: center;
 }
 
-.intro-text > form {
-    width: 650px;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
+#homesearch {
+    display: block;
+    text-align: center;
+}
+
+#homesearch > form > div {
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #cite {
