@@ -74,9 +74,15 @@
     margin: auto;
 }
 
-footer > div.container {
-    height: auto;
+footer {
+    height:40px;
     width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color:black;
+}
+
+footer > div.container {
 }
 
 aside {
