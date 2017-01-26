@@ -180,6 +180,7 @@ class CatalogController < ApplicationController
     config.spell_max = 5
 
     add_nav_action 'about_link.html.erb'
+    add_nav_action 'feedback_link.html.erb'
   end
 
 
