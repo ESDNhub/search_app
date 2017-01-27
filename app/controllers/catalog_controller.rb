@@ -63,6 +63,8 @@ class CatalogController < ApplicationController
     config.show.document_actions.delete(:sms)
     config.show.document_actions.delete(:email)
     config.show.document_actions.delete(:citation)
+    config.index.document_actions.delete(:bookmark)
+    config.show.document_actions.delete(:bookmark)
 
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
