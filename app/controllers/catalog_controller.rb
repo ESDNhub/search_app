@@ -50,6 +50,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.date.displayDate', :label => 'Date'
     config.add_show_field 'sourceResource.collection.title', :label => 'Collection'
     config.add_show_field 'sourceResource.description', :label => 'Description'
+    config.add_show_field 'sourceResource.subject.name', :label => 'Subject'
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
@@ -57,7 +58,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'id', :label => 'DPLA', :helper_method => 'build_dpla_link'
     config.add_show_field '@id', :label => 'DPLA API', :helper_method => 'build_dpla_api_link'
     config.add_show_field 'intermediateProvider', :label => 'Council'
-    config.add_show_field 'sourceResource.subject.name', :label => 'Subject'
 
     # take out broken document actions. Leave bookmarking
     config.show.document_actions.delete(:sms)
