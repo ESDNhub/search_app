@@ -51,6 +51,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'sourceResource.collection.title', :label => 'Collection'
     config.add_show_field 'sourceResource.description', :label => 'Description'
     config.add_show_field 'sourceResource.subject.name', :label => 'Subject'
+    config.add_show_field 'sourceResource.spatial.name', :label => 'Location'
     config.add_show_field 'sourceResource.rights', :label => 'Rights'
     config.add_show_field 'isShownAt', :label => 'View Object', :helper_method => 'dbla_external_link'
     config.add_show_field 'dataProvider', :label => 'Contributing Institution'
