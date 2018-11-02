@@ -114,7 +114,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     logger (1.2.8)
-    loofah (2.0.2)
+    loofah ~> 2.2.3
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
